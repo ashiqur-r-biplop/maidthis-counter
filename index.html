@@ -4,31 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dynamic Counter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="scroll"></div>
     <div class="counter-container">
         <div class="counter-flex">
             <div class="counter-box">
-                <h1 class="counter-value">50,000+</h1>
+                <h1 class="counter-value" data-value="50000">50,000<span class="small">-000</span>+</h1>
                 <p>Cleanings</p>
             </div>
+            <div class="devider"></div>
             <div class="counter-box">
-                <h1 class="counter-value">140,000+</h1>
+                <h1 class="counter-value" data-value="140000">140,000+</h1>
                 <p>Hours Saved</p>
             </div>
+            <div class="devider"></div>
             <div class="counter-box">
-                <h1 class="counter-value">2013</h1>
+                <h1 class="counter-value" id="Established" data-value="2013">2013</h1>
                 <p>Established</p>
             </div>
+            <div class="devider"></div>
             <div class="counter-box">
-                <h1 class="counter-value">1,087+ </h1>
-                <p>5-Star Reviews </p>
+                <h1 class="counter-value" data-value="1087">1,087+</h1>
+                <p>5-Star Reviews</p>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
