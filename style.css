@@ -22,6 +22,7 @@
     z-index: 2;
     /* Lower z-index than before element */
     border-radius: 15px;
+    left: 0;
 }
 
 .counter-flex::before {
@@ -66,7 +67,28 @@
 .counter-container.visible {
     visibility: visible;
 }
-.scroll{
+
+.scroll {
     width: 100%;
     height: 100vh;
+}
+
+@media screen and (max-width: 540px) {
+    .counter-container {
+        padding: 0px 10px;
+    }
+
+    .counter-flex {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .devider {
+        height: 1px;
+        width: 80px;
+    }
+    .counter-flex::before{
+        width: calc(100% + .5px);
+    }
 }
